@@ -1,0 +1,18 @@
+- sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+- yum install epel-release # repository that provides 'daemonize'
+
+- yum install java-11-openjdk-devel
+
+- yum install jenkins
+
+
+#To start Jenkins, Run the following commands
+
+# Start Jenkins
+
+- Service Jenkins start
+
+#Setup Jenkins to start at boot
+
+- chkconfig Jenkins on
