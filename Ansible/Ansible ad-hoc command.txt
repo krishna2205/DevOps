@@ -1,0 +1,12 @@
+Ansible Ad-hoc command with modules
+
+
+An ad-hoc command is something that you might type in to do something really quick, but don't want to save for later.
+Simple Running linux command on runtime for  group of servers mentioned in hosts file.
+
+
+
+
+
+command : create file
+ansible -i  hosts  servers -m file -a "path=/home/ubuntu/test1 mode=755 state=directory" -b
